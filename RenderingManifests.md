@@ -1,10 +1,10 @@
-## Client-Server Rendering Manifest (Conceptual Overview)
+## Client-Server Rendering Manifest (Conceptual Overview)  
 
-Updated 28 Aug 2025.
-Companion Repository: https://github.com/thatquantumguy/qvm
+Updated 28 Aug 2025.  
+Companion Repository: https://github.com/thatquantumguy/qvm  
 
-### Context
-In the system for which this approach was conceived, every type the server evaluates is a packed index into something else — whether that’s a function in an L1‑cache‑resident, work‑queue‑native kernel instance, or a rich volumetric texture in client VRAM.
+### Context  
+In the system for which this approach was conceived, every type the server evaluates is a packed index into something else — whether that’s a function in an L1‑cache‑resident, work‑queue‑native kernel instance, or a rich volumetric texture in client VRAM.  
 
 Because of this, it is both natural and efficient to treat all server‑side state as an approximation of geometry, concepts, and attributes. The server’s role is not to replicate full‑fidelity world state, but to resolve indices into compact, meaningful references from which the client can construct a controlled view into it.
 
